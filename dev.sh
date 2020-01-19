@@ -3,7 +3,7 @@ RESTORE='\033[0m'
 RED='\033[00;31m'
 GREEN='\033[00;32m'
 YELLOW='\e[0;33m'
-HOST_PROD=twitter-tranquilo.example.com
+HOST_PROD=twittertranquilo.funiltopia.com
 
 # Because nobody wants to be memorizing commands all the time
 # Instructions:
