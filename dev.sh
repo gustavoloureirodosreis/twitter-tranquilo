@@ -118,10 +118,10 @@ function dkup {
 function dkrun_prod {
     docker stop twitter-tranquilo
     docker rm twitter-tranquilo
-    docker run --name twitter-tranquilo -d --env-file /home/ubuntu/twitter-tranquilo.env \
+    docker run --name twitter-tranquilo -d --env-file /home/ubuntu/twittertranquilo.env \
         -p 3000:3000 -p 8000:8000 \
-        -v /home/ubuntu/dkdata/twitter-tranquilo:/dkdata \
-        twitter-tranquilo start_web.sh
+        -v /home/ubuntu/dkdata/twittertranquilo:/dkdata \
+        twitter-tranquilo bash /usr/bin/start_web.sh
 }
 
 function deploy_prod {
